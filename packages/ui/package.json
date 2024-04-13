@@ -1,0 +1,8 @@
+{
+  "name": "@trackr/ui",
+  "version": "0.1.0",
+  "description": "Web application for Trackr",
+  "main": "index.js",
+  "authors": "Enger Jiménez <ejimenezr21@gmail.com>",
+  "license": "MIT"
+}

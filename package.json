@@ -1,0 +1,15 @@
+{
+  "name": "trackr",
+  "version": "0.1.0",
+  "description": "A simple and efficient issue-tracking application designed to streamline your workflow.",
+  "keywords": [
+    "trackr",
+    "codellaborate"
+  ],
+  "author": "Enger Jiménez <ejimenezr21@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/ui",
+    "packages/api"
+  ]
+}
