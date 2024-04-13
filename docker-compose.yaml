@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:20.11.0-alpine.3.19
+    ports:
+      - "5173:5173"
+
+  api:
+    image: node:20.11.0-alpine.3.19
+    ports:
+      - "3000:3000"
+  
+  database:
+    image: postgres:16.2-alpine3.19
+    restart: on-failure:3
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./.data/postgres:/var/lib/postgresql/data
+    env_file:
+      - .env
+    healthcheck:
+      test: [ "CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3  

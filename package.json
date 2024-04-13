@@ -8,8 +8,14 @@
   ],
   "author": "Enger Jiménez <ejimenezr21@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codellaborate/trackr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codellaborate/trackr/issues"
+  },
   "workspaces": [
-    "packages/ui",
-    "packages/api"
+    "packages/*"
   ]
 }
