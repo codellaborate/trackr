@@ -1,0 +1,21 @@
+{
+  "name": "trackr",
+  "version": "0.1.0",
+  "description": "A simple and efficient issue-tracking application designed to streamline your workflow.",
+  "keywords": [
+    "trackr",
+    "codellaborate"
+  ],
+  "author": "Enger Jiménez <ejimenezr21@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codellaborate/trackr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codellaborate/trackr/issues"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
